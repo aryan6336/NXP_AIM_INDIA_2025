@@ -260,31 +260,31 @@ class WarehouseExplore(Node):
        self.shelves = []
 
        for cnt in contours:
-        if cv2.contourArea(cnt) < 50:
-            continue  # Skip small noise
+           if cv2.contourArea(cnt) < 50:
+              continue  # Skip small noise
 
-        rect = cv2.minAreaRect(cnt)
-        (cx, cy), (w, h), angle = rect
+           rect = cv2.minAreaRect(cnt)
+           (cx, cy), (w, h), angle = rect
 
-        # Correct angle so it always aligns with the long edge
-        if h > w:
-            corrected_angle = angle
-        else:
-            corrected_angle = angle + 90
+           # Correct angle so it always aligns with the long edge
+           if h > w:
+                corrected_angle = angle
+           else:
+                corrected_angle = angle + 90
 
-        # Convert center to world coordinates
-        shelf_pos = self.get_world_coord_from_map_coord(cx, cy, map_info)
+           # Convert center to world coordinates
+           shelf_pos = self.get_world_coord_from_map_coord(cx, cy, map_info)
 
-        # Convert size to world scale
-        real_w,real_h=self.get_world_coord_from_map_coord(w,h,map_info)
+           # Convert size to world scale
+           real_w,real_h=self.get_world_coord_from_map_coord(w,h,map_info)
 
-        shelf_data = {
-            "center": shelf_pos,
-            "orientation": corrected_angle,  # degrees
-            "dimensions_m": (real_w, real_h)
-        }
-        self.shelves.append(shelf_data)
-        for i, shelf in enumerate(self.shelves):
+           shelf_data = {
+               "center": shelf_pos,
+               "orientation": corrected_angle,  # degrees
+               "dimensions_m": (real_w, real_h)
+           }
+           self.shelves.append(shelf_data)
+       for i, shelf in enumerate(self.shelves):
           print(f"Shelf No (i+1),Shelf center: {shelf_pos}, orientation: {corrected_angle:.2f}°")
 
 
