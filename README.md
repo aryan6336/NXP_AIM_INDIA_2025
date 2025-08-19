@@ -12,6 +12,13 @@ This repository documents our team's participation in the NXP AIM India 2025 B3R
 **Regional Finale:** The regional finale took place at IIIT Delhi. Our team successfully explored all the shelves in the warehouse using our code, but we struggled with time optimization for object and QR scanning. Ultimately, our code's performance in this area prevented us from advancing to the Grand Finale.
 
 ---
+### 📜 Certificate of Participation
+
+We are proud to have received a certificate of participation for successfully qualifying for the NXP AIM India 2025 regional finals.
+
+![NXP AIM India 2025 Certificate](https://drive.google.com/file/d/1T-Vg-KRIN-MG88ott5SXOP5QVTlNKfv0/view?usp=drivesdk)
+
+--- 
 ### 🏁 Competition Overview
 
 The competition is structured into three distinct phases.
