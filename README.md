@@ -16,7 +16,7 @@ This repository documents our team's participation in the NXP AIM India 2025 B3R
 
 We are proud to have received a certificate of participation for successfully qualifying for the NXP AIM India 2025 regional finals.
 
-![NXP AIM India 2025 Certificate](https://drive.google.com/file/d/1T-Vg-KRIN-MG88ott5SXOP5QVTlNKfv0/view?usp=drivesdk)
+![NXP AIM India 2025 Certificate](NXP_AIM_2025.jpg)
 
 --- 
 ### 🏁 Competition Overview
